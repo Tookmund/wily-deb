@@ -2,14 +2,20 @@ Source: wily
 Section: unknown
 Priority: optional
 Maintainer: Jacob Adams <tookmund@gmail.com>
-Build-Depends: debhelper (>= 9), autotools-dev
+Build-Depends: debhelper (>= 10), libx11-dev, libxt-dev, x11proto-core-dev
 Standards-Version: 3.9.8
-Homepage: <insert the upstream URL, if relevant>
+Homepage: http://www.cs.yorku.ca/~oz/wily/
 #Vcs-Git: https://anonscm.debian.org/collab-maint/wily.git
 #Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/wily.git
 
 Package: wily
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description:  A work-alike of the Acme programming environment for Plan 9
+ Wily's basic functions are to edit and search for text and to run
+ commands. It is intended to eventually be an integrated working
+ environment for all tasks involving text. It uses the mouse heavily. 
+ .
+ It emphasises speed for experienced users, but is probably simple
+ to learn as it has very few concepts.
+
