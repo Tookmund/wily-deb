@@ -1,1 +1,177 @@
-FIXME
+wily (0.13.42-1) UNRELEASED; urgency=medium
+
+  * New Maintainer (Closes: #871241)
+  * New upstream version
+  * Updated debian/copyright (Closes: #872866)
+  * Updated build rules (Closes: #438263)
+
+ -- Jacob Adams <tookmund@gmail.com>  Wed, 23 Aug 2017 16:17:01 -0400
+
+wily (0.13.41-7.3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Make the build reproducible. (Closes: #777360)
+
+ -- Chris Lamb <lamby@debian.org>  Fri, 18 Aug 2017 09:08:17 -0700
+
+wily (0.13.41-7.2) unstable; urgency=low
+
+  [Jari Aalto]
+  * Non-maintainer upload.
+  * debian/control
+    - (Build-Depends): update obsolete x-dev to x11proto-core-dev.
+      (important RC bug; Closes: #515460).
+
+ -- Jari Aalto <jari.aalto@cante.net>  Sat, 27 Mar 2010 10:36:45 +0200
+
+wily (0.13.41-7.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix bashism in debian/rules (Closes: #478638)
+  * Bump Standards-Version to 3.8.0.
+
+ -- Chris Lamb <chris@chris-lamb.co.uk>  Sat, 07 Jun 2008 21:02:30 +0100
+
+wily (0.13.41-7) unstable; urgency=low
+
+  * Use \[12] instead of charset-specific half-symbol in man page
+  * Install to /usr not /usr/X11R6
+  * Update Standards-Version to 3.6.2.0
+  * Update to debhelper V5 mode
+  * Improve clean target of debian/rules
+  * Update Build-Depends after xlibs-dev removal (Closes: #347056)
+  * Update menu after Bill Allombert debian-devel-announce of 2005-06-15
+  * Fix win's configure test for ptmx (Closes: #319266, #318828)
+
+ -- MJ Ray (Debian) <mjr@debian.org>  Sun, 15 Jan 2006 01:33:20 +0000
+
+wily (0.13.41-6) unstable; urgency=low
+
+  * Fix for gcc-3.4 compiles. Thanks to Andreas Jochens for his patch.
+    (Closes: #270071)
+
+ -- MJ Ray (Debian) <mjr@debian.org>  Tue,  7 Sep 2004 00:25:12 +0100
+
+wily (0.13.41-5) unstable; urgency=low
+
+  * Stupid maintainer address consistency fix
+  * Fixed implicit declaration in libXg (Closes: #226649)
+
+ -- MJ Ray (Debian) <mjr@debian.org>  Tue, 16 Mar 2004 11:32:21 +0000
+
+wily (0.13.41-4) unstable; urgency=low
+
+  * A 9libs release may be coming soon, so uploading known fixes.
+  * Freshened README.Debian (Closes: #181012)
+  * Corrected copyright file (Closes: #181014)
+  * Added known maintainers (Closes: #181015)
+  * Change of maintainer address.
+
+ -- MJ Ray (Debian) <mjr@debian.org>  Tue, 08 Jul 2003 15:03:31 +0100
+
+wily (0.13.41-3) unstable; urgency=low
+
+  * Finishing adoption as maintainer (Closes: #87816)
+  * Adding win to the package.  Omitted in error previously.
+
+ -- MJ Ray <markj@luminas.co.uk>  Tue, 13 Aug 2003 19:20:15 +0100
+
+wily (0.13.41-2) unstable; urgency=low
+
+  * Don't upload the original source code just to change maintainers, this way
+    madness lies...
+
+ -- Thom May <thom@debian.org>  Wed,  3 Apr 2002 22:38:49 +0100
+
+wily (0.13.41-1) unstable; urgency=low
+
+  * Changing maintainer as directed by Josip Rodin.
+
+ -- MJ Ray <markj@luminas.co.uk>  Sat,  9 Mar 2002 02:40:19 +0000
+
+wily (0.13.41-0.3) unstable; urgency=low
+
+  * Fixes to packaging to make it comply with current policy.  (Closes:
+    #113496)
+
+ -- MJ Ray <markj@luminas.co.uk>  Wed, 20 Feb 2002 20:15:01 +0000
+
+wily (0.13.41-0.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Now installs Doc/perl.txt, Doc/FAQ.txt, Doc/changes.txt
+    (Closes: #40511)
+
+ -- William Ono <wmono@debian.org>  Thu, 29 Jul 1999 17:35:57 -0700
+
+wily (0.13.41-0.1) unstable; urgency=low
+
+  * Non maintainer upload.
+  * New upstream version, from ftp.cs.york.ac.uk.
+  * Converted debian/rules to debhelper (and moved exe to X11R6/bin).
+  * Some changes to other debian/* files, mostly to control.
+  * Added the Artistic licence to copyright (it is in README).
+  * Added a menu entry.
+
+ -- Josip Rodin <jrodin@jagor.srce.hr>  Tue, 15 Jun 1999 23:49:16 +0200
+
+wily (0.13.33-3) unstable; urgency=low
+
+  * Interim maintainer release
+  * Set maintainer field to debian-qa, i.e. orphaning it.
+  * Updated Standards-Version
+
+ -- Martin Schulze <joey@finlandia.infodrom.north.de>  Sat, 24 Oct 1998 15:22:35 +0200
+
+wily (0.13.33-2) unstable; urgency=low
+
+  * Compilied against libc6 (non-maintainer)
+
+ -- Karl Sackett <krs@debian.org>  Mon,  3 Nov 1997 17:08:01 -0500
+
+wily (0.13.33-1) unstable; urgency=low
+
+  * Latest upstream release.
+
+ -- Karl Sackett <krs@debian.org>  Thu, 20 Mar 1997 10:06:44 -0600
+
+wily (0.13.23-2) unstable; urgency=low
+
+  * Added user notes in README.debian.
+  * Wily.ad: corrected path for p9font and p9fixed.
+  * repackaged wily macros and tutorial for ease of use.
+  * macros, html: corrected paths for rc and fonts.
+  * corrected html guide files problem which prevented rebuilding
+    source with dpkg-source -x.
+
+ -- Karl Sackett <krs@caos.aamu.edu>  Tue, 26 Nov 1996 09:47:52 -0600
+
+wily (0.13.23-1) unstable; urgency=low
+
+  * New upstream release; many bug fixes.
+
+ -- Karl Sackett <krs@caos.aamu.edu>  Thu, 21 Nov 1996 13:35:06 -0600
+
+wily (0.13.10-2) unstable; urgency=low
+
+  * debian/rules: package builds under binary-arch target (bug #4651).
+
+ -- Karl Sackett <krs@caos.aamu.edu>  Mon, 30 Sep 1996 10:40:38 -0500
+
+wily (0.13.10-1) unstable; urgency=low
+
+  * New upstream release.
+  * Converted to new packaging standards.
+  * Doc/Makefile: call 'sgml2latex -p' instead of 'sgml2ps'
+
+ -- Karl Sackett <krs@caos.aamu.edu>  Thu, 19 Sep 1996 10:22:32 -0500
+
+0.12.11-1
+	* added Debian support files
+	* misc/Wily.ad: changed definitions for geometry, p9font, and p9fixed
+	* added html and macros guide files
+
+Local variables:
+mode: debian-changelog
+End:
+
