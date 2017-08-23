@@ -15,4 +15,4 @@
 
 
 %:
-	dh $@ --with autotools_dev
+	dh $@
