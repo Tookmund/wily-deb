@@ -1,0 +1,7 @@
+# See uscan(1) for format
+
+# Compulsory line, this is a version 4 file
+version=4
+
+# SourceForge hosted projects
+http://sf.net/wily/ wily-(\d\S+)\.tar\.gz debian uupdate
