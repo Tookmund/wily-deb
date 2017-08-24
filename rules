@@ -19,7 +19,7 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_clean:
 	dh_clean
-	rm -f */Makefile tools/win/config.{cache,log,status} tools/win/Makefile tools/win/configure
+	rm -f config.log */Makefile tools/win/config.* tools/win/Makefile tools/win/configure
 
 override_dh_install:
 	dh_install
@@ -27,7 +27,8 @@ override_dh_install:
 	# Doesn't exist in current tarball, but was part of earlier packaging
 	#cd misc && tar -czhf ../debian/wily/usr/share/doc/wily/wily.tar.gz wily
 
-override_dh_auto_build:
-	dh_auto_build
-	cd tools/win && autoreconf && ./configure --prefix=/usr --cache-file=../../config.cache
-	cd tools/win && make
+# Win fails to build
+#override_dh_auto_build:
+#	dh_auto_build
+#	cd tools/win && autoreconf && ./configure --prefix=/usr --cache-file=../../config.cache
+#	cd tools/win && make
