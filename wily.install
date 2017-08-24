@@ -1,0 +1,14 @@
+# Need to find a good way to build win first1
+#tools/win/win		usr/bin
+#tools/win/wgoto	usr/bin
+#tools/win/wreplace	usr/bin
+
+# Not sure what to do with these files yet
+# misc/fixed.9.font
+# misc/prop.9.font
+
+misc/Wily.ad		etc/X11/app-defaults/Wily
+
+Doc/*.txt	usr/share/doc/wily/html
+Doc/*.html	usr/share/doc/wily/html
+Doc/*.gif	usr/share/doc/wily/html
