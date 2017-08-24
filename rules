@@ -5,7 +5,7 @@
 
 
 # see FEATURE AREAS in dpkg-buildflags(1)
-#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 # see ENVIRONMENT in dpkg-buildflags(1)
 # package maintainers to append CFLAGS
@@ -19,4 +19,10 @@
 
 override_dh_clean:
 	dh_clean
-	rm -f */Makefile
+	rm -f */Makefile tools/win/config.{cache,log,status}
+
+override_dh_install:
+	dh_install
+	cd Doc && tar -czhf ../debian/wily/usr/share/doc/wily/tute.tar.gz tute
+	# Doesn't exist in current tarball, but was part of earlier packaging
+	#cd misc && tar -czhf ../debian/wily/usr/share/doc/wily/wily.tar.gz wily
