@@ -3,7 +3,7 @@ Section: editors
 Priority: optional
 Maintainer: Jacob Adams <tookmund@gmail.com>
 Build-Depends: debhelper (>= 10), libx11-dev, libxt-dev, x11proto-core-dev
-Standards-Version: 3.9.8
+Standards-Version: 4.0.0
 Homepage: http://www.cs.yorku.ca/~oz/wily/
 #Vcs-Git: https://anonscm.debian.org/collab-maint/wily.git
 #Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/wily.git
@@ -11,7 +11,7 @@ Homepage: http://www.cs.yorku.ca/~oz/wily/
 Package: wily
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description:  A work-alike of the Acme programming environment for Plan 9
+Description:  Work-alike of the Acme programming environment for Plan 9
  Wily's basic functions are to edit and search for text and to run
  commands. It is intended to eventually be an integrated working
  environment for all tasks involving text. It uses the mouse heavily. 
