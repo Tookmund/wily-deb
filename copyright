@@ -2,6 +2,8 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: wily
 Source: https://sourceforge.net/projects/wily/
 
+Files-Excluded: configure config.cache config.h config.log config.status Makefile lib*/Makefile wily/Makefile
+
 Files: *
 Copyright: 1995, 1996 Gary Capell
 License: Artistic
