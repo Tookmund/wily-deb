@@ -1,5 +1,5 @@
 Source: wily
-Section: unknown
+Section: editors
 Priority: optional
 Maintainer: Jacob Adams <tookmund@gmail.com>
 Build-Depends: debhelper (>= 10), libx11-dev, libxt-dev, x11proto-core-dev
