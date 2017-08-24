@@ -1,0 +1,17 @@
+--- a/wily/Makefile.in
++++ b/wily/Makefile.in
+@@ -6,7 +6,7 @@
+ exec_prefix = @exec_prefix@
+ 
+ # Directory in which to install scripts.
+-bindir = $(exec_prefix)/bin
++bindir = $(DESTDIR)$(exec_prefix)/bin
+ CC=@CC@
+ RANLIB=@RANLIB@
+ INCLUDES= -I.. -I$(srcdir)/../include @X_CFLAGS@
+@@ -47,4 +47,5 @@
+ dist:	nuke
+ 	cp -r `ls |grep -v RCS` ../dist/wily
+ install:	$(TARGET)
++	mkdir -p $(bindir)
+ 	cp $(TARGET) $(bindir)
