@@ -4,4 +4,4 @@
 version=4
 
 # SourceForge hosted projects
-http://sf.net/wily/ wily@ANY_VERSION@@ARCHIVE_EXT@ debian uupdate
+http://sf.net/wily/ wily-(?!9libs)@ANY_VERSION@@ARCHIVE_EXT@ debian uupdate
