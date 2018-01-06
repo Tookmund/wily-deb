@@ -11,10 +11,10 @@ Homepage: http://www.cs.yorku.ca/~oz/wily/
 Package: wily
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description:  Work-alike of the Acme programming environment for Plan 9
+Description: Work-alike of the Acme programming environment for Plan 9
  Wily's basic functions are to edit and search for text and to run
  commands. It is intended to eventually be an integrated working
- environment for all tasks involving text. It uses the mouse heavily. 
+ environment for all tasks involving text. It uses the mouse heavily.
  .
  It emphasises speed for experienced users, but is probably simple
  to learn as it has very few concepts.
